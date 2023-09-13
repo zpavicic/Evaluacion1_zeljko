@@ -34,8 +34,8 @@
         android:id="@+id/btn1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Sección Layouts"
-        android:onClick="seccionLayouts"/>
+        android:onClick="seccionLayouts"
+        android:text="Sección Layouts" />
 
     <Button
         android:id="@+id/btn2"

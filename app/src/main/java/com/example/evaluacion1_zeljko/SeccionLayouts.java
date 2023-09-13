@@ -9,7 +9,7 @@ import android.widget.Button;
 
 public class SeccionLayouts extends AppCompatActivity {
 
-    private Button btn5;
+    private Button btn5, btn11;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,16 +17,27 @@ public class SeccionLayouts extends AppCompatActivity {
         setContentView(R.layout.activity_seccion_layouts);
 
         btn5 = (Button) findViewById(R.id.btn5);
-        regresar();
+        btn11 = (Button) findViewById(R.id.btn11);
+        seccionTableLayout();
+        home();
 
     }
 
-    public void regresar(){
+    public void seccionTableLayout(){
+        btn11.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent sig = new Intent(SeccionLayouts.this, SeccionTableLayout.class);
+                startActivity(sig);
+            }
+        });
+    }
+    public void home(){
         btn5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent regr = new Intent(SeccionLayouts.this, MainActivity.class);
-                startActivity(regr);
+                Intent regresar = new Intent(SeccionLayouts.this, MainActivity.class);
+                startActivity(regresar);
             }
         });
     }

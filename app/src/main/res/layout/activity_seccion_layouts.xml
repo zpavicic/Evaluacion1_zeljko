@@ -20,9 +20,63 @@
         android:textSize="20dp"
         android:textStyle="bold" />
 
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="140dp"
+            android:layout_height="33dp"
+            android:gravity="center"
+            android:text="Constraint Layout"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="379dp"
+            android:layout_height="69dp"
+            android:layout_marginTop="40dp"
+            android:text="ConstraintLayout te permite crear diseños grandes y complejos con una jerarquía de vistas plana (sin grupos de vistas anidadas)."
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textView9" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="375dp"
+            android:layout_height="366dp"
+            android:layout_marginTop="4dp"
+            android:src="@drawable/constraintlayout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.705"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <Button
+        android:id="@+id/btn11"
+        android:layout_width="355dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:onClick="seccionTableLayout"
+        android:text="Siguiente" />
+
     <Button
         android:id="@+id/btn5"
-        android:layout_width="match_parent"
+        android:layout_width="356dp"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:onClick="home"
         android:text="Regresar" />
+
 </LinearLayout>
