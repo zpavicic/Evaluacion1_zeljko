@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -8,28 +8,213 @@
     android:padding="10dp"
     tools:context=".SeccionWidgets">
 
-    <TextView
-        android:id="@+id/textView4"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:text="Estas en la sección widgets"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:orientation="vertical">
 
-    <Button
-        android:id="@+id/btn6"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:text="Regresar"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4" />
-</LinearLayout>
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="10dp"
+            android:text="Estas en la sección widgets"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Checkbox"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Checkbox es un elemento de interacción de la interfaz gráfica de usuario que permite hacer selecciones múltiples de un conjunto de opciones"
+            android:textAlignment="center"
+            android:layout_marginTop="10dp"/>
+
+        <CheckBox
+            android:id="@+id/cb1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Opción 1" />
+
+        <CheckBox
+            android:id="@+id/cb2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Opción 2" />
+
+        <CheckBox
+            android:id="@+id/cb3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Opción 3" />
+
+        <Button
+            android:id="@+id/button11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Comprobar Checkbox" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="RadioButton"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Radio button es un tipo de widget que permite al usuario elegir una de un conjunto predefinido de opciones."
+            android:textAlignment="center" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <RadioButton
+                android:id="@+id/rb1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Verdadero" />
+
+            <RadioButton
+                android:id="@+id/rb2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Falso" />
+
+            <Button
+                android:id="@+id/button12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Comprobar RadioButton" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Progress Bar"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Progress Bar es un widget que permite informar al usuario, el grado de avance de una tarea."
+            android:textAlignment="center" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"/>
+
+        <Button
+            android:id="@+id/button13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Iniciar ProgressBar" />
+
+        <TextView
+            android:id="@+id/textView19"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="Rating Bar"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rating Bar es un widget que representa visualmente una barra de calificación con estrellas. Lo que permite al usuario dar click sobre ella para elegir la cantidad de estrellas a otorgar."
+            android:textAlignment="center" />
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"/>
+
+        <Button
+            android:id="@+id/button14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Otorgar Calificación" />
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ImageView"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:id="@+id/textView22"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ImageView hace referencia a un contenedor o recuadro en el que podemos ubicar una imagen. En otras palabras nos sirve para renderizar imágenes."
+            android:textAlignment="center" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="0dp"
+            android:layout_gravity="center"
+            android:src="@drawable/gato" />
+
+        <Button
+            android:id="@+id/btn6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Regresar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+
+    </LinearLayout>
+
+
+</ScrollView>
