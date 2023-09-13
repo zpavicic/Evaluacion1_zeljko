@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">Evaluacion1_zeljko</string>
+
+    <string-array name="genero">
+        <item>Hombre</item>
+        <item>Mujer</item>
+        <item>Otro</item>
+        <item>Prefiero no decirlo</item>
+    </string-array>
+
 </resources>

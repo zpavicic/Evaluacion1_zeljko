@@ -64,10 +64,11 @@
             android:text="Opción 3" />
 
         <Button
-            android:id="@+id/button11"
+            android:id="@+id/btn11"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Comprobar Checkbox" />
+            android:text="Comprobar Checkbox"
+            android:onClick="comprobarCbox"/>
 
         <TextView
             android:id="@+id/textView15"
@@ -104,10 +105,11 @@
                 android:text="Falso" />
 
             <Button
-                android:id="@+id/button12"
+                android:id="@+id/btn12"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Comprobar RadioButton" />
+                android:text="Comprobar RadioButton"
+                android:onClick="comprobarRadioButton"/>
         </RadioGroup>
 
         <TextView
@@ -129,7 +131,7 @@
             android:textAlignment="center" />
 
         <ProgressBar
-            android:id="@+id/progressBar"
+            android:id="@+id/pb1"
             style="?android:attr/progressBarStyleHorizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -137,10 +139,12 @@
             android:layout_marginBottom="10dp"/>
 
         <Button
-            android:id="@+id/button13"
+            android:id="@+id/btn13"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Iniciar ProgressBar" />
+
+
 
         <TextView
             android:id="@+id/textView19"
@@ -161,7 +165,7 @@
             android:textAlignment="center" />
 
         <RatingBar
-            android:id="@+id/ratingBar"
+            android:id="@+id/rbar1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:numStars="5"
@@ -173,7 +177,8 @@
             android:id="@+id/button14"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Otorgar Calificación" />
+            android:text="Otorgar Calificación"
+            android:onClick="cuantasEstrellas"/>
 
         <TextView
             android:id="@+id/textView21"
