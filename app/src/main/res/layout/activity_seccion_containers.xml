@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:padding="10dp"
     tools:context=".SeccionContainers">
 
     <TextView
@@ -15,7 +16,8 @@
         android:textAlignment="center"
         android:textSize="20sp"
         android:textStyle="bold"
-        android:layout_marginTop="40dp"/>
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="40dp"/>
 
     <Button
         android:id="@+id/btn7"
